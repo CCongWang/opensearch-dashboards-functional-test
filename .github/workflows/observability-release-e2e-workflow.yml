@@ -1,9 +1,8 @@
 name: Observability Release tests workflow in Bundled OpenSearch Dashboards
 on:
-  pull_request:
+  push:
     branches:
-      - main
-      - dev-*
+      - conjwang/parallel
 jobs:
   tests:
     uses: ./.github/workflows/release-e2e-workflow-template.yml
